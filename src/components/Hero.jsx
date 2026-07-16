@@ -1,0 +1,212 @@
+import "./Hero.css";
+import Stats from "./Stats";
+import About from "./About";
+import {
+  FaBook,
+  FaChartLine,
+  FaChartBar,
+  FaHeadset,
+} from "react-icons/fa";
+function Hero() {
+  return (
+    <div
+    className="hero-container"
+              style={{
+background:
+  "linear-gradient(135deg, #000000 0%, #0F172A 100%)",
+  backgroundSize: "40px 40px",
+                color: "white",
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        textAlign: "center",
+        padding: "40px",
+        animation: "fadeIn 1s ease",
+overflow: "hidden",
+        background:
+  "linear-gradient(135deg, #000000 0%, #0F172A 100%)",
+      }}
+      >
+  <div className="hero-content">
+     <h1
+  style={{
+    fontSize: "60px",
+    marginBottom: "10px",
+    color: "#FFD700",
+    textShadow: "0 0 15px #FFD700",
+    fontWeight: "bold",
+  }}
+>
+  WELCOME TO
+</h1>
+ <h2
+
+  style={{
+
+fontSize: "clamp(42px, 8vw, 70px)",
+
+    color: "#c0ff14",
+
+marginBottom: "10px",
+
+    letterSpacing: "8px",
+
+    textShadow: "0 0 25px #39ff14",
+
+    fontWeight: "bold",
+
+  }}
+
+>
+
+KING OF POCKET
+</h2>
+<a
+  className="join-btn"
+href="https://t.me/+IdKuNLEQFQ5hNjM8"
+  target="_blank"
+  rel="noreferrer"
+  onClick={() => window.fbq && window.fbq('track', 'Lead')}
+  style={{
+    display: "inline-block",
+    marginTop: "30px",
+    marginBottom: "40px",
+    background: "linear-gradient(90deg, #39ff14, #00c853)",
+    color: "black",
+    padding: "20px 50px",
+    borderRadius: "15px",
+    border: "2px solid #39ff14",
+    textDecoration: "none",
+    fontSize: "28px",
+    fontWeight: "bold",
+  }}
+>
+  اضغط هنا للانضمام
+</a>
+<h2
+  style={{
+    marginTop: "40px",
+    fontSize: "36px",
+    color: "#00BFFF",
+    textShadow: "0 0 10px #00BFFF",
+    fontWeight: "bold",
+  }}
+>
+
+  عند الانضمام ستحصل على
+</h2>
+
+<div className="features">
+
+  <div className="feature-card">
+<h3
+  style={{
+    color: "#39ff14",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "10px",
+  }}
+>
+  <FaBook />
+  كورس شامل
+</h3>    <p>هتحصل على كورس شامل مجانًا.</p>
+  </div>
+
+ <div className="feature-card">
+  <h3
+  style={{
+    color: "#39ff14",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "10px",
+  }}
+>
+  <FaChartLine />
+  إدارة مالية
+</h3>
+<p>إدارة رأس المال باحتراف</p>
+  </div>
+<div className="feature-card financial-card">
+       <h3
+  style={{
+    color: "#39ff14",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "10px",
+  }}
+>
+  <FaChartBar />
+  انديكيتور
+</h3>
+    <p>انديكيتور تحليلي مجاني.</p>
+  </div>
+
+ <div className="feature-card">
+<h3
+  style={{
+    color: "#39ff14",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "10px",
+  }}
+>
+  <FaHeadset />
+  دعم فني
+</h3>    <p>دعم فني وتدريب على مدار الساعة.</p>
+  </div>
+
+</div>
+      
+<div className="feature-card financial-card">
+      <h2
+    style={{
+      color: "white",
+      marginBottom: "15px",
+    }}
+  >
+    مميزات تانية كتير مستنياك
+  </h2>
+
+  <h2
+    style={{
+      color: "#39ff14",
+      margin: "0",
+    }}
+  >
+    انضم معنا وهتحصل عليها مجانًا
+  </h2>
+</div>
+
+<a
+className="join-btn"
+  href="https://t.me/+IdKuNLEQFQ5hNjM8"
+  target="_blank"
+  rel="noreferrer"
+  style={{
+    display: "inline-block",
+width: "100%",
+marginTop: "20px",
+   background: "linear-gradient(90deg, #39ff14, #00c853)",
+    color: "black",
+    borderRadius: "15px",
+border: "2px solid #39ff14",
+    textDecoration: "none",
+       fontWeight: "bold",
+  }}
+>
+  اضغط هنا للانضمام
+</a>
+  <Stats />
+ <About />
+</div>
+</div>
+  );
+}
+
+export default Hero;
