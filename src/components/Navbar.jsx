@@ -26,7 +26,19 @@ KING OF POCKET
   href="https://t.me/+IdKuNLEQFQ5hNjM8"
   target="_blank"
   rel="noreferrer"
-  onClick={() => window.fbq && window.fbq('track', 'Lead')}
+  onClick={(e) => {
+  e.preventDefault();
+
+  if (window.fbq) {
+    window.fbq("track", "Lead", {}, {
+      event_callback: () => {
+        window.open("https://t.me/+IdKuNLEQFQ5hNjM8", "_blank");
+      }
+    });
+  } else {
+    window.open("https://t.me/+IdKuNLEQFQ5hNjM8", "_blank");
+  }
+}}
   style={{
     color: "#00c853",
     textDecoration: "none",
