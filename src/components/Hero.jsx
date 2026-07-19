@@ -72,14 +72,12 @@ href="https://t.me/+IdKuNLEQFQ5hNjM8"
   e.preventDefault();
 
   if (window.fbq) {
-    window.fbq("track", "Lead", {}, {
-      event_callback: () => {
-        window.open("https://t.me/+IdKuNLEQFQ5hNjM8", "_blank");
-      }
-    });
-  } else {
-    window.open("https://t.me/+IdKuNLEQFQ5hNjM8", "_blank");
+    window.fbq("track", "Lead");
   }
+
+  setTimeout(() => {
+    window.open("https://t.me/+IdKuNLEQFQ5hNjM8", "_blank");
+  }, 300);
 }}
   style={{
     display: "inline-block",
@@ -204,14 +202,12 @@ onClick={(e) => {
   e.preventDefault();
 
   if (window.fbq) {
-    window.fbq("track", "Lead", {}, {
-      event_callback: () => {
-        window.open("https://t.me/+IdKuNLEQFQ5hNjM8", "_blank");
-      }
-    });
-  } else {
-    window.open("https://t.me/+IdKuNLEQFQ5hNjM8", "_blank");
+    window.fbq("track", "Lead");
   }
+
+  setTimeout(() => {
+    window.open("https://t.me/+IdKuNLEQFQ5hNjM8", "_blank");
+  }, 300);
 }}
   style={{
     display: "inline-block",
