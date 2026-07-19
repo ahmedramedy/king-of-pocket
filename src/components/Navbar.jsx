@@ -24,16 +24,17 @@ KING OF POCKET
 
       <a
   href="https://t.me/+IdKuNLEQFQ5hNjM8"
-        target="_blank"
-        rel="noreferrer"
-        style={{
-          color: "#00c853",
-          textDecoration: "none",
-          fontWeight: "bold",
-        }}
-      >
-        Join Telegram
-      </a>
+  target="_blank"
+  rel="noreferrer"
+  onClick={() => window.fbq && window.fbq('track', 'Lead')}
+  style={{
+    color: "#00c853",
+    textDecoration: "none",
+    fontWeight: "bold",
+  }}
+>
+  Join Telegram
+</a>
     </nav>
   );
 }

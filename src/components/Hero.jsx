@@ -184,10 +184,11 @@ href="https://t.me/+IdKuNLEQFQ5hNjM8"
 </div>
 
 <a
-className="join-btn"
+  className="join-btn"
   href="https://t.me/+IdKuNLEQFQ5hNjM8"
   target="_blank"
   rel="noreferrer"
+  onClick={() => window.fbq && window.fbq('track', 'Lead')}
   style={{
     display: "inline-block",
 width: "100%",
