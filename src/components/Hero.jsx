@@ -73,6 +73,7 @@ href="https://t.me/+IdKuNLEQFQ5hNjM8"
 
   if (window.fbq) {
     window.fbq("track", "Lead");
+    window.fbq("track", "Subscribe");
   }
 
   setTimeout(() => {
@@ -203,6 +204,7 @@ onClick={(e) => {
 
   if (window.fbq) {
     window.fbq("track", "Lead");
+    window.fbq("track", "Subscribe");
   }
 
   setTimeout(() => {
