@@ -72,9 +72,11 @@ href="https://t.me/+IdKuNLEQFQ5hNjM8"
   e.preventDefault();
 
   if (window.fbq) {
-    window.fbq("track", "Lead");
-    window.fbq("track", "Subscribe");
-  }
+  window.fbq("track", "Lead", {
+    value: 5,
+    currency: "EGP",
+  });
+}
 
   setTimeout(() => {
     window.open("https://t.me/+IdKuNLEQFQ5hNjM8", "_blank");
@@ -94,7 +96,19 @@ href="https://t.me/+IdKuNLEQFQ5hNjM8"
     fontWeight: "bold",
   }}
 >
+ 
   اضغط هنا للانضمام
+  <span
+    style={{
+      fontSize: "10px",
+      marginRight: "8px",
+      opacity: 0.35,
+      color: "#39ff14",
+      fontWeight: "normal",
+    }}
+  >
+    5 جنيه مصري
+  </span>
 </a>
 <h2
   style={{
@@ -203,9 +217,11 @@ onClick={(e) => {
   e.preventDefault();
 
   if (window.fbq) {
-    window.fbq("track", "Lead");
-    window.fbq("track", "Subscribe");
-  }
+  window.fbq("track", "Lead", {
+    value: 5,
+    currency: "EGP",
+  });
+}
 
   setTimeout(() => {
     window.open("https://t.me/+IdKuNLEQFQ5hNjM8", "_blank");
@@ -223,7 +239,19 @@ border: "2px solid #39ff14",
        fontWeight: "bold",
   }}
 >
+ 
   اضغط هنا للانضمام
+  <span
+    style={{
+      fontSize: "10px",
+      marginRight: "8px",
+      opacity: 0.35,
+      color: "#39ff14",
+      fontWeight: "normal",
+    }}
+  >
+    5 جنيه مصري
+  </span>
 </a>
   <Stats />
  <About />
